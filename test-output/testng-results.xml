@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[PASS -- Launched Chrome browser successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- Application launched successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- Log in page displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS --  Click on the Order history button]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- Order History page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- Click on the My Account link]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- My Account page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS --  Click on the My Credit Slips]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- My Credit Slips page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- Click on the My Account link]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- My Account page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS --  Click on the My Address]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- My Address page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- Click on the My Account link]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- My Account page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS --  Click on the My Personal Information button]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- My Personal information page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- Click on the My Account link]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- My Account page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS --  Click on the MY WISHLISTS]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- My Wishlists page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- Click on the My Account link]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- My Account page is displayed successfully]]>
+    </line>
+    <line>
+      <![CDATA[PASS -- User is logged out successfully]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20570" started-at="2018-03-25T00:35:20Z" finished-at="2018-03-25T00:35:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20570" started-at="2018-03-25T00:35:20Z" finished-at="2018-03-25T00:35:41Z">
+      <class name="com.ramesh.seleniumPractice.basics.day1.PageVerification">
+        <test-method status="PASS" signature="myAccountPagevalidation()[pri:0, instance:com.ramesh.seleniumPractice.basics.day1.PageVerification@5e3a8624]" name="myAccountPagevalidation" duration-ms="20554" started-at="2018-03-25T00:35:20Z" finished-at="2018-03-25T00:35:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[PASS -- Launched Chrome browser successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- Application launched successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- Log in page displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS --  Click on the Order history button]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- Order History page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- Click on the My Account link]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- My Account page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS --  Click on the My Credit Slips]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- My Credit Slips page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- Click on the My Account link]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- My Account page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS --  Click on the My Address]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- My Address page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- Click on the My Account link]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- My Account page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS --  Click on the My Personal Information button]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- My Personal information page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- Click on the My Account link]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- My Account page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS --  Click on the MY WISHLISTS]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- My Wishlists page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- Click on the My Account link]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- My Account page is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[PASS -- User is logged out successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- myAccountPagevalidation -->
+      </class> <!-- com.ramesh.seleniumPractice.basics.day1.PageVerification -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
