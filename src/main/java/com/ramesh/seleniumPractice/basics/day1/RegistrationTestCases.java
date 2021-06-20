@@ -9,12 +9,15 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class RegistrationTestCases {
 
 	String applicationUrl = "http://automationpractice.com/index.php";
 	
 @Test
 	public void createAccount() throws InterruptedException {
+		WebDriverManager.firefoxdriver().setup();
 		
 		WebDriver driver = new FirefoxDriver();  //Launches the Firefox browser
 		Reporter.log("PASS -- Firefox browser launched successfully", true);

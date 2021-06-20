@@ -1,15 +1,17 @@
 package com.ramesh.seleniumPractice.basics.day1;
 
-import java.util.Iterator;
 import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.internal.MouseAction;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class NavigationPageVerificationTestCases {
 	
@@ -17,10 +19,11 @@ public class NavigationPageVerificationTestCases {
 	
 @Test
 	public void myAccountPagevalidation() {
-		
-		WebDriver driver = new FirefoxDriver();  //Launches the Firefox browser
+	    WebDriverManager.edgedriver().setup();
+	    WebDriver driver = new EdgeDriver();
+	
 		driver.manage().window().maximize();  //maximize the browser window
-		Reporter.log("PASS -- Firefox browser launched successfully", true);
+		Reporter.log("PASS -- Microsoft Edge browser launched successfully", true);
 		
 		driver.get(applicationUrl);  //Launch the application
 		Reporter.log("PASS -- Application launched successfully", true);
@@ -89,7 +92,8 @@ public class NavigationPageVerificationTestCases {
 		
 		driver.quit();
 	}
-@Test
+
+ /*@Test
 	public void footerPageValidation() throws InterruptedException {
 		
 		WebDriver driver = new FirefoxDriver();  //Launches the Firefox browser
@@ -134,6 +138,6 @@ public class NavigationPageVerificationTestCases {
 		Reporter.log("PASS -- User is logged out successfully", true);
 		
 		driver.quit();
-	}
+	} */
 }
 

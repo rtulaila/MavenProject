@@ -1,17 +1,16 @@
 package com.ramesh.seleniumPractice.basics.day1;
 
 import java.io.File;
-import java.util.Iterator;
-import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.internal.MouseAction;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PageVerification {
 	
@@ -20,8 +19,9 @@ public class PageVerification {
 @Test
 	public void myAccountPagevalidation() {
 		
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+File.separator+"chromedriver.exe"); 	
-		WebDriver driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+File.separator+"chromedriver.exe"); 	
+	    WebDriverManager.chromedriver().setup();
+	    WebDriver driver = new ChromeDriver();
 		Reporter.log("PASS -- Launched Chrome browser successfully", true);
 
 		driver.get(applicationUrl);  //Launch the application
@@ -41,7 +41,7 @@ public class PageVerification {
 		WebElement loginModule = driver.findElement(By.xpath("//form[@id='login_form']"));
 		loginModule.isDisplayed();  //Verifying whether the webelement is displayed or not
 		
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("ramesh@dit.com");   //Enter the email into the email text box
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("testautomation88@test.com");   //Enter the email into the email text box
 		WebElement password = driver.findElement(By.id("passwd"));
 		password.sendKeys("123456");   //Enter the password into the password text box
 		

@@ -1,14 +1,16 @@
 package com.ramesh.seleniumPractice.basics.day1;
 
 import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebDriverCommands {
 	
@@ -43,7 +45,8 @@ public class WebDriverCommands {
 @Test
 	public void signinToTheApplication() {
 		
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+File.separator+"chromedriver.exe"); 	
+      //  System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+File.separator+"chromedriver.exe"); 	
+	    WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		Reporter.log("PASS -- Launched Chrome browser successfully", true);
 
